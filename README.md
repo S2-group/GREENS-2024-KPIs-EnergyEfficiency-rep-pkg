@@ -1,11 +1,11 @@
 # Thesis / Paper Title
-This repository is a companion page for the following thesis / publication:
+<!-- This repository is a companion page for the following thesis / publication:
 > Author Names. Publication year. Thesis / Paper title. Publication venue / proceedings.
 
 It contains all the material required for replicating the study, including: X, Y, and Z.
 
 ## How to cite us
-The scientific article describing design, execution, and main results of this study is available [here](https://www.google.com).<br> 
+The scientific article describing design, execution, and main results of this study is available [here](https://www.google.com).<br>
 If this study is helping your research, consider to cite it is as follows, thanks!
 
 ```
@@ -18,19 +18,11 @@ If this study is helping your research, consider to cite it is as follows, thank
   year={},
   publisher={}
 }
-```
+``` -->
 
-## Quick start
-Here a documentation on how to use the replication material should be provided.
+## Unveiling Key Performance Indicators for the Energy Efficiency of Cloud Data Storage - Replication Package
 
-### Getting started
-
-1. Provide step-by-step instruction on how to use this repository, including requirements, and installation / script execution steps.
-
-2. Code snippets should be formatted as follows.
-   - `git clone https://github.com/S2-group/template-replication-package`
-
-3. Links to specific folders / files of the repository can be linked in Markdown, for example this is a link to the [src](src/) folder.
+This repository provides the replication package for generating the graphs from the collected data.
 
 ## Repository Structure
 This is the root directory of the repository. The directory is structured as follows:
@@ -38,31 +30,29 @@ This is the root directory of the repository. The directory is structured as fol
     template-replication-package
      .
      |
-     |--- src/                             Source code used in the thesis / paper
+     |--- src/                             Source code (Python) used in the paper to generate graphs
      |
-     |--- documentation/                   Further structured documentation of the replication package content
+     |--- documentation/                   NA
      |
-     |--- data/                            Data used in the thesis / paper 
-            |
-            |--- additional_subfolder/     Subfolders should be further nested to increase readability                 
-  
+     |--- data/                            Data collected via NetApp, used to generate graphs
 
-Usually, replication packages should include:
-* a [src](src/) folder, containing the entirety of the source code used in the study,
-* a [data](data/) folder, containing the raw, intermediate, and final data of the study
-* if needed, a [documentation](documentation/) folder, where additional information w.r.t. this README is provided. 
 
-In addition, the replication package can include additional data/results (in form of raw data, tables, and/or diagrams) which were not included in the study manuscript.
+     # consumption_patterns script
+     This script contains the analysis and visualisation conducted for identifying patterns of power consumption across different models. The visualisation of power consumption and capacity per watt ratio metrics can also be found in this script.
 
-## Replication package naming convention
-The final name of this repository, as appearing in the published article, should be formatted according to the following naming convention:
-`<short conference/journal name>-<yyyy>-<semantic word>-<semantic word>-rep-pkg`
+     # capacity_utilisation script
+     This script contains analysis and visualisation of the capacity utilisation of the storage environment in the period of 2022 to 2023. For filtering the node models when observing the capacity utilisation values per node, use the code in the Filtering Section with a specific node model.
 
-For example, the repository of a research published at the International conference on ICT for Sustainability (ICT4S) in 2022, which investigates cloud tactics would be named `ICT4S-2022-cloud-tactics-rep-pkg`
+     # space_saving scriot
+     This script includes analysis and visualisation of space saving techniques provided by NetApp. The share of the techniques on space saving and their efficiency is compared in this analysis.
 
-## Preferred repository license
-As general indication, we suggest to use:
-* [MIT license](https://opensource.org/licenses/MIT) for code-based repositories, and 
-* [Creative Commons Attribution 4.0	(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) for text-based repository (papers, docts, etc.).
+     # environmental_indicators script
+     This script contains analysis and visualisation of the relation between data on different environmental inidicators provided by NetApp.
 
-For more information on how to add a license to your replication package, refer to the [official GitHUb documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
+     # dc_consumption script
+     This script contains an approximate estimation of the share of SBP's data storage in terms of energy impact compared to the golbal energy consumption of data centers based on the estimations from the literature.
+
+     # data files
+
+     - data.xlsx file contains company's data regarding the performance of the storage environment (capacity utilisation, space saving, etc)
+     - workingenvironment.csv file contains sustainability data provided by NetApp
