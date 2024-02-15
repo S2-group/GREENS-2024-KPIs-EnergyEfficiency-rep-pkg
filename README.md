@@ -22,7 +22,7 @@ If this study is helping your research, consider to cite it is as follows, thank
 
 ## Unveiling Key Performance Indicators for the Energy Efficiency of Cloud Data Storage - Replication Package
 
-This repository provides the replication package for generating the graphs from the collected data.
+This repository provides the replication package for our study "Unveiling Key Performance Indicators for the Energy Efficiency of Cloud Data Storage", submitted to the GREENS Workshop at ICSA 2024
 
 ## Repository Structure
 This is the root directory of the repository. The directory is structured as follows:
