@@ -1,4 +1,3 @@
-# Thesis / Paper Title
 <!-- This repository is a companion page for the following thesis / publication:
 > Author Names. Publication year. Thesis / Paper title. Publication venue / proceedings.
 
