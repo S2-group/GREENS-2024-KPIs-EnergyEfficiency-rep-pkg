@@ -8,7 +8,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
 # Read data from Excel file
-df = pd.read_csv('workingenvironment.csv')
+df = pd.read_csv('./data/workingenvironment.csv')
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
 import numpy as np
@@ -19,7 +19,7 @@ from scipy import stats
 ##########################################################################################
 
 # Load your data
-df = pd.read_csv('Workingenvironment.csv')
+df = pd.read_csv('./data/workingenvironment.csv')
 
 # Function to perform linear regression and visualize the results
 def perform_linear_regression(ax, x, y, xlabel, ylabel):
