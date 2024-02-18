@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.lines as mlines
 # Load your CSV data
 result_df = []
-df = pd.read_excel('./data/data.xlsx', sheet_name='Current Capacity and Efficiency')
+df = pd.read_excel('../data/data.xlsx', sheet_name='Current Capacity and Efficiency')
 
 #####################################################################
 

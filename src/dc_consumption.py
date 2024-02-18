@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 ## Load the dataframe with Actual Power Consumption of the Whole Cluster
-df_power = pd.read_csv('./data/workingenvironment.csv')
+df_power = pd.read_csv('../data/workingenvironment.csv')
 
 # Calculate Total Power Consumption per Cluster
 total_power_dc = df_power['Actual power kW'].sum()

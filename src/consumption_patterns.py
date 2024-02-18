@@ -3,17 +3,17 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the dataframe with Actual Power Consumption of the Whole Cluster
-df_power = pd.read_csv('./data/workingenvironment.csv')
+df_power = pd.read_csv('../data/workingenvironment.csv')
 
 # Load the dataframe with the information about nodes and clusters
-df_nodes = pd.read_excel('./data/data.xlsx', sheet_name='Current Capacity and Efficiency')
+df_nodes = pd.read_excel('../data/data.xlsx', sheet_name='Current Capacity and Efficiency')
 # Convert both 'Cluster Name' columns to lowercase for case-insensitive merge
 
 df_power['Cluster Name'] = df_power['Cluster Name'].str.lower()
 df_nodes['Cluster Name'] = df_nodes['Cluster Name'].str.lower()
 # ########################################################################## past and forcast data
 # Step 1: Read historical data
-historical_data = pd.read_excel('./data/data.xlsx', sheet_name='Past and Forecast Data')
+historical_data = pd.read_excel('../data/data.xlsx', sheet_name='Past and Forecast Data')
 
 # Step 2: Filter data for years 2022 and 2023
 historical_data['Year'] = historical_data['Month'].str.split('-').str[1].astype(int)

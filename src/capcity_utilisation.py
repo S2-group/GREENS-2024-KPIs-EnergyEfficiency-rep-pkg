@@ -5,7 +5,7 @@ from scipy.stats import probplot
 from scipy.stats import shapiro
 
 # Step 1: Read historical data
-historical_data = pd.read_excel('./data/data.xlsx', sheet_name='Past and Forecast Data')
+historical_data = pd.read_excel('../data/data.xlsx', sheet_name='Past and Forecast Data')
 
 # Step 2: Filter data for years 2022 and 2023
 historical_data['Year'] = historical_data['Month'].str.split('-').str[1].astype(int)
