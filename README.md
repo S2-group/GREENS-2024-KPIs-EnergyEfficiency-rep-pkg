@@ -51,6 +51,6 @@ This script contains analysis and visualisation of the relation between data on 
 ### dc_consumption.py
  This script contains an approximate estimation of the share of SBP's data storage in terms of energy impact compared to the golbal energy consumption of data centers based on the estimations from the literature.
 
- # data files
+### data files
  - data.xlsx file contains company's data regarding the performance of the storage environment (capacity utilisation, space saving, etc)
  - workingenvironment.csv file contains sustainability data provided by NetApp
